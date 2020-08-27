@@ -1,0 +1,26 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "Expense App that tracks all your income and expenses",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vince-vegas/Expense-Tracker-App.git"
+  },
+  "keywords": [
+    "Budget",
+    "App"
+  ],
+  "author": "Vince S. Tañan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vince-vegas/Expense-Tracker-App/issues"
+  },
+  "homepage": "https://github.com/Vince-vegas/Expense-Tracker-App#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

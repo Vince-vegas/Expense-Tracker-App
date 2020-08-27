@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <div class="expense-holder">
+    <div class="exp-header">
+      <h1 class="balance">Your Balance: $<span class="exp-total">0</span></h1>
+      <div class="exp-tracker">
+        <div class="exp-box">
+          <h4>Income</h4>
+          <h2 class="income-text">$<span class="income">0</span></h2>
+        </div>
+        <div class="exp-box">
+          <h4>Expense</h4>
+          <h2 class="expense-text">$<span class="expense">0</span></h2>
+        </div>
+      </div>
+
+      <div class="records">
+        <div class="rec-header">
+          <h4>Transaction records</h4>
+          <button class="clear-transaction">Clear Transactions</button>
+        </div>
+        <ul class="record-menu">
+        </ul>
+      </div>
+
+      <div class="transactions">
+        <div class="item">
+          <form class="form-income">
+            <div class="input-box">
+              <input class="input-income" autocomplete="off" type="text" name="name" placeholder="Add income">
+            </div>
+            <div class="input-box">
+              <div class="transaction-icon">
+                +
+              </div>
+              <input class="income-amount icon-box" autocomplete="off" type="number" name="amount"
+                placeholder="Enter amount">
+            </div>
+            <button type="submit" class="btn btn-income">Submit</button>
+          </form>
+        </div>
+        <div class="item">
+          <form class="form-expense">
+            <div class="input-box">
+              <input class="input-expense" autocomplete="off" type="text" name="name" placeholder="Add expenses">
+            </div>
+            <div class="input-box">
+              <div class="transaction-icon expense">
+                -
+              </div>
+              <input class="expense-amount icon-box" autocomplete="off" type="number" name="expense"
+                placeholder="Enter amount">
+            </div>
+            <button type="submit" class="btn btn-expense">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="src/index.js"></script>
+</body>
+
+</html>

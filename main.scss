@@ -1,0 +1,229 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+body {
+  font: 400 16px/1.6 'Roboto', sans-serif;
+  background: #34495e;
+  color: #34495e;
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.expense-holder {
+  padding: 20px 30px;
+  border-radius: 5px;
+  max-width: 510px;
+  border: 1px solid;
+  margin: 40px auto 0;
+  background-color: #fff;
+}
+
+.exp-header {
+  text-align: center;
+  .balance {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+}
+
+.exp-tracker {
+  display: flex;
+  padding: 10px;
+
+  .exp-box {
+    min-width: 120px;
+
+    flex: 1;
+
+    .income-text {
+      color: #2ecc71;
+    }
+
+    .expense-text {
+      color: #e74c3c;
+    }
+
+    h4 {
+      font-size: 24px;
+      font-weight: bolder;
+    }
+
+    &:last-child {
+      border-left: 1px solid #333;
+    }
+  }
+}
+
+.transactions {
+  display: flex;
+  justify-content: center;
+
+  .item {
+    flex: 1;
+    padding: 0 10px;
+  }
+}
+
+.transactions {
+  margin: 40px -10px 0;
+  .input-box {
+    margin-bottom: 10px;
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 5px 10px;
+      font-size: 16px;
+      outline: none;
+      border: none;
+      border: 1px solid #b5b5b5;
+      border-radius: 3px;
+    }
+
+    .icon-box {
+      padding-left: 30px;
+    }
+  }
+
+  .transaction-icon {
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    top: 50%;
+    font-size: 25px;
+    transform: translateY(-50%);
+    user-select: none;
+
+    &.expense {
+      transform: translateY(-55%);
+    }
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    color: #fff;
+    outline: none;
+  }
+
+  .btn-income {
+    background-color: #2ecc71;
+  }
+
+  .btn-expense {
+    background-color: #e74c3c;
+  }
+}
+
+.records {
+  padding: 20px 0;
+
+  .rec-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h4 {
+      text-align: left;
+    }
+
+    button {
+      background: rgb(94, 123, 252);
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 30px;
+      font-size: 14px;
+    }
+  }
+}
+
+.record-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  li {
+    padding: 2px 18px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px #b3b3b3;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    user-select: none;
+
+    .inc-number {
+      margin-left: auto;
+    }
+
+    &:hover button {
+      opacity: 1;
+    }
+  }
+
+  .income {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #2ecc71;
+      height: 100%;
+      width: 7px;
+    }
+  }
+
+  .expense {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #e74c3c;
+      height: 100%;
+      width: 7px;
+    }
+  }
+
+  button {
+    font-size: 18px;
+    background: transparent;
+    color: red;
+    position: absolute;
+    left: -25px;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
