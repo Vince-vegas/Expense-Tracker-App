@@ -3,7 +3,7 @@
 
 Built with:
 
-- [Javascript]
+- Javascript
 
 ## Run the Project:
 

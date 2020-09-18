@@ -68,6 +68,25 @@ button {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .expense-holder {
+    padding: 20px 15px;
+    max-width: 345px;
+  }
+
+  .exp-header {
+    .balance {
+      font-size: 20px;
+    }
+  }
+
+  .exp-tracker {
+    h4 {
+      font-size: 20px;
+    }
+  }
+}
+
 .transactions {
   display: flex;
   justify-content: center;
